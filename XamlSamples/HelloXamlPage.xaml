@@ -2,7 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamlSamples.HelloXamlPage" Title="Hello XAML Page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="“Hello, XAML!”" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Rotation="15" IsVisible="true" FontSize="Large" FontAttributes="Bold" TextColor="Blue" />
+            <Label>
+                <Label.Text>
+        Hello, XAML!
+    </Label.Text>
+                <Label.FontAttributes>
+        Bold
+    </Label.FontAttributes>
+                <Label.FontSize>
+        Large
+    </Label.FontSize>
+                <Label.TextColor>
+        Aqua
+    </Label.TextColor>
+                <Label.VerticalOptions>
+        Center
+    </Label.VerticalOptions>
+            </Label>
             <Button Text="Plus Code" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="OnPlusCodeBtnClicked" />
         </StackLayout>
     </ContentPage.Content>
